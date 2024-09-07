@@ -3,7 +3,6 @@ import { DeckService } from './deck.service';
 import { DeckController } from './deck.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Deck, DeckSchema } from './deck.schema';
-
 @Module({
   imports: [
     MongooseModule.forFeature([{ name: Deck.name, schema: DeckSchema }]),
