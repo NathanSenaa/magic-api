@@ -5,7 +5,6 @@ import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './jwt.strategy';
 import { UserModule } from '../user/user.module';
 import { PassportModule } from '@nestjs/passport';
-
 @Module({
   imports: [
     UserModule, // Importa o módulo de usuários para validar as credenciais
